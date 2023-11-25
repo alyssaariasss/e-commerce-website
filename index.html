@@ -242,73 +242,25 @@
           </div>
 
           <div class="flash-indicator">
-            <div class="bg-btn">
+            <div class="bg-btn" onclick="showPrevProduct()">
               <i class="fa-solid fa-arrow-left"></i>
             </div>
 
-            <div class="bg-btn">
+            <div class="bg-btn" onclick="showNextProduct()">
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
         </div>
 
-        <div class="flash-products">
-          <div class="product-card">
-            <div class="product-card-body">
-              <div class="product-img">
-                <img
-                  src="img/flash-sale-product1.png"
-                  alt="Flash Sale Product 1"
-                />
-              </div>
+        <div class="flash-products" id="flashProducts"></div>
+      </div>
 
-              <div class="product-overlays">
-                <div class="product-tag">
-                  <p>-40%</p>
-                </div>
-
-                <div class="product-buttons">
-                  <div class="bg-btn">
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-
-                  <div class="bg-btn">
-                    <i class="fa-regular fa-eye"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="add-cart">
-                <p>Add to Cart</p>
-              </div>
-            </div>
-
-            <div class="product-card-text">
-              <div class="product-title">
-                <p>HAVIT HV-G92 Gamepad</p>
-              </div>
-              <div class="product-price">
-                <p class="current-price">$120</p>
-                <p class="prev-price"><strike>$160</strike></p>
-              </div>
-              <div class="product-ratings">
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                </div>
-                <div class="total-rating">
-                  <p>(88)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="view-all">
+        <button class="view-btn">View All Products</button>
       </div>
     </div>
 
     <script src="scripts/nav.js"></script>
+    <script src="scripts/flash-products.js"></script>
   </body>
 </html>
